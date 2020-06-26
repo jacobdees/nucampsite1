@@ -28,6 +28,9 @@
             <h1>Nucamp</h1>
             <h2>a better way to camp</h2>
           </div>
+            <div class="col-md-4 col-xl-2 col mt-4">
+              <a href="#reserveForm"><button class="btn btn-info">Reserve Campsite</button></a>
+            </div>
         </div>
 			</div>
 		</header>
@@ -68,15 +71,64 @@
 
     <div class="container">
       <div class="row row-content align-items-center">
+        <!-- specifies the width for just the header -->
+        <!-- header will take up 3 cols until viewport is sm -->
         <div class="col-sm-4 col-md-3">
-			    <h2>Featured Campsites</h2>
+          <!-- I don't see much of a difference when this class is taken out... -->
+			    <h2 class="text-sm-left">Featured Campsites</h2>
         </div>
         <div class="col">
-          <h3>React Lake Campground</h3>
-          <p class="d-none d-sm-block">
-            Nestled in the foothills of the Chrome Mountains, this campground on the
-            shores of the pristine React Lake is a favorite for fly fishers.
-          </p>
+          <!-- "media" connects the header, paragraph, and image -->
+          <div class="media">
+            <!-- "media-body" allows the h3 & p to be inline with h2 and img -->
+            <div class="media-body align-self-center">
+              <h3>React Lake Campground</h3>
+              <!-- Once viewport is below sm, this p will disappear -->
+              <p class="d-none d-sm-block">
+                Nestled in the foothills of the Chrome Mountains, this campground on the
+                shores of the pristine React Lake is a favorite for fly fishers.
+              </p>
+            </div>
+            <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake Thumbnail">
+          </div>
+        </div>
+      </div>
+      <!-- I put id="reserveForm" here instead of on the actual form tag because I think it looks better.
+      We're probably going to add some code to make it look better later on, but for now...I'm keeping this. -->
+      <div class="row row-content align-items-center"  id="reserveForm">
+        <!-- "mx-auto" automatically centers the col -->
+        <div class="col-sm-6 mx-auto">
+          <div class="card">
+            <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+            <div class="card-body">
+              <form>
+                <div class="form-group row">
+                  <label class="col-xs col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
+                  <div class="col-xs col">
+                    <!-- "form-control" makes the box beautiful and neat -->
+                    <select class="form-control" name="numCampers" id="numCampers">
+                      <option selected="selected" class="selected">Select...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-xs col-sm-6 col-form-label" for="date">Date</label>
+                  <div class="col">
+                    <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control">
+                  </div>
+                </div>
+                <div>
+                  <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
 		</div>
