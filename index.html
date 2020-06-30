@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<!-- Required meta tags -->
@@ -6,8 +7,7 @@
 		<!-- Bootstrap CSS -->
 		<link
 			rel="stylesheet"
-			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-		/>
+			href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
@@ -17,6 +17,7 @@
 
 		<title>Nucamp: A Better Way To Camp</title>
 	</head>
+
 	<body>
 		<header class="jumbotron jumbotron-fluid">
 			<div class="container">
@@ -35,6 +36,7 @@
 			</div>
 		</header>
 
+<!-- once the collapsible navbar is created, it will collaps automatically UNLESS you include that navbar-expand class -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30"></a>
@@ -104,7 +106,7 @@
               <form>
                 <div class="form-group row">
                   <label class="col-xs col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
-                  <div class="col-xs col">
+                  <div class="col">
                     <!-- "form-control" makes the box beautiful and neat -->
                     <select class="form-control" name="numCampers" id="numCampers">
                       <option selected="selected" class="selected">Select...</option>

@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+      <!-- Required meta tags always come first -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+      <!-- Additional CSS must be placed after Bootstrap CSS -->
+      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+      <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.css" />
-
-    <title>NuCamp: A Better Way To Camp</title>
-</head>
+      <title>NuCamp: A Better Way To Camp</title>
+  </head>
 
 <body>
 
@@ -121,6 +120,7 @@
                       <div class="col offset-md-2">
                       May we contact you?
                       <!-- Radio inputs have to have the same name, but different id's -->
+                      <!-- form-check is special to radio and checkbox input types -->
                       <div class="form-check form-check-inline">
                         <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
                         <label for="contactYes" class="form-check-label">Yes </label>
