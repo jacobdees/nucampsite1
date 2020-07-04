@@ -39,3 +39,11 @@ header h2{
 .selected{
   display:none;
 }
+
+.carousel-caption {
+  background-color: rgba(0,0,0,0.5)
+}
+
+.carousel {
+  border: solid #5637DD;
+}
